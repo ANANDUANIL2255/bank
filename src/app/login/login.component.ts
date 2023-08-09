@@ -10,15 +10,19 @@ export class LoginComponent {
 data="happy banking with us"
 data2="enter account number"
 
-login(){
-  alert("login clicked")
-}
-acnoChange(event:any){
-  console.log(event.target.value);
+login(a:any,b:any){
+  console.log(a.value);
+  console.log(b.value);
   
-}
-passChange(event:any){
-  console.log(event.target.value);
   
+  // alert("login clicked")
 }
+// acnoChange(event:any){
+//   console.log(event.target.value);
+  
+// }
+// passChange(event:any){
+//   console.log(event.target.value);
+  
+// }
 }

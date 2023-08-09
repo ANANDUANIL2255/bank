@@ -38,6 +38,10 @@ h3{
     color: #111cde;
     height: auto;
     /* margin-top: 20px; */
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    height: auto;
 
  } 
 /* 

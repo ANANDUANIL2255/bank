@@ -1,27 +1,27 @@
 <!-- <h3>login works!</h3> -->
 <!-- <br> -->
 <h4 style="color: beige; padding: 10px; text-align: center;">{{data}}</h4>
-<div class="ani  mb-3  container" >
+<!-- <div class="ani  mb-3  container" > -->
     
-    <div class="body ">
+    <div class="body container">
      
         <h3 style="color: gold;">Here Is Your Login Form</h3>
         <form>
             <div class="mb-3">
-              <label  style="color: white;" for="exampleInputEmail1" class="form-label">Account Number</label>
-              <input (change)="acnoChange($event)" type="email"  class="form-control" id="acc" [placeholder]="data2" aria-describedby="emailHelp">
+              <label style="color: white;" for="exampleInputEmail1" class="form-label">Account Number</label>
+              <input  #acno  type="email"  class="form-control" id="acc" [placeholder]="data2" aria-describedby="emailHelp">
               <div style="color: white;" id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
             </div>
             <div class="mb-3">
-              <label style="color: white;" for="exampleInputPassword1" class="form-label">Password</label>
-              <input (change)="passChange($event)" type="password" class="form-control" id="pass">
+              <label  style="color: white;" for="exampleInputPassword1" class="form-label">Password</label>
+              <input #psw type="password" class="form-control" id="pass">
             </div>
           
-            <button (click)="login()" type="submit"  class="btn btn-primary">Login</button><br><br>
+            <button (click)="login(acno,psw)" type="button"  class="btn btn-primary">Login</button><br><br>
             <p class="lin">Not Registered?<a href="">Create a new account</a></p> 
           </form>
     </div>
-  </div>
+  <!-- </div> -->
 
   <!-- <div class="container">  
     <div class="container-fluid bg-white">
