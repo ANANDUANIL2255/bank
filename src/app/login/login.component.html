@@ -9,42 +9,15 @@
         <form>
             <div class="mb-3">
               <label style="color: white;" for="exampleInputEmail1" class="form-label">Account Number</label>
-              <input  #acno  type="email"  class="form-control" id="acc" [placeholder]="data2" aria-describedby="emailHelp">
+              <input [(ngModel)]="acno" name="accnu"  type="email"  class="form-control" id="acc" [placeholder]="data2" aria-describedby="emailHelp">
               <div style="color: white;" id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
             </div>
             <div class="mb-3">
               <label  style="color: white;" for="exampleInputPassword1" class="form-label">Password</label>
-              <input #psw type="password" class="form-control" id="pass">
+              <input [(ngModel)]="psw" name="passwo" type="password" class="form-control" id="pass">
             </div>
           
-            <button (click)="login(acno,psw)" type="button"  class="btn btn-primary">Login</button><br><br>
-            <p class="lin">Not Registered?<a href="">Create a new account</a></p> 
+            <button (click)="login()" type="submit"  class="btn btn-primary">Login</button><br><br>
+            <p class="lin">Not Registered?<a routerLink="signup">Create a new account</a></p> 
           </form>
-    </div>
-  <!-- </div> -->
-
-  <!-- <div class="container">  
-    <div class="container-fluid bg-white">
-    <form>
-        <div class="mb-3">
-          <label for="exampleInputPassword1" class="form-label">User Id</label><br>
-          <input type="password" class="" id="l1">
-        </div>
-        <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label">Password</label><br>
-            <input type="password" class="" id="l1">
-          </div>
-
-        <div class="mb-3 form-check"> 
-            <br>
-            <button type="submit" class="z1 btn btn-success ">Sign Up</button>
-          </div>
-            <div class="mb-3 form-check">
-<br>
-                <h5 >if you are new:<a class="n1" href="">create a new account</a></h5>
-
-        </div>
-
-      </form>
-    </div>  
-      </div> -->
+    </div> 
